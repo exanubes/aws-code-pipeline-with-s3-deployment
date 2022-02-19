@@ -3,6 +3,8 @@
 Repository from [exanubes.com](https://exanubes.com) for [AWS Code Pipeline with S3 Deployment and Github Repository](https://exanubes.com/blog/aws-code-pipeline-with-s3-deployment-from-github-repository).
 
 
+This repository is using AWS CDK v2 and is not compatible with AWS CDK v1 bootstrap stack.
+
 ## Commands:
 
 Run the following commands for deploying and destroying the stacks
