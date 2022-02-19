@@ -1,14 +1,16 @@
-# Welcome to your CDK TypeScript project
+# AWS Code Pipeline with S3 deployment
 
-This is a blank project for TypeScript development with CDK.
+Repository from [exanubes.com](https://exanubes.com) for [AWS Code Pipeline with S3 Deployment and Github Repository](https://exanubes.com/blog/aws-code-pipeline-with-s3-deployment-from-github-repository).
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-## Useful commands
+## Commands:
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+Run the following commands for deploying and destroying the stacks
+
+```
+npm run cdk:deploy
+npm run cdk:destroy
+```
+
+
+Both of these commands use the `aws-cli sts` service to get the account id and aws IAM role `exanubes-cloudformation-access` in order to dynamically provide role arn. Make sure you're using the account you want to deploy the stacks to and that you have the role created either with the same name or different name and change the scripts in `package.json`.
